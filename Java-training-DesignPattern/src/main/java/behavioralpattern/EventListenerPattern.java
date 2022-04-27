@@ -1,5 +1,6 @@
+package behavioralpattern;
+
 import java.util.ArrayList;
-import java.util.EventObject;
 import java.util.List;
 
 /**

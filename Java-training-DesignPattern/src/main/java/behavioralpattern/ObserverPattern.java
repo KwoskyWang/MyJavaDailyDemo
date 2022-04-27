@@ -1,3 +1,5 @@
+package behavioralpattern;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,8 +8,8 @@ import java.util.List;
  * 观察者模式组成结构:
  *      1.被观察者接口【①添加观察者 ②删除观察者 ③通知观察者】
  *      2.被观察者实现【实现接口方法，添加删除方法实现通过可变参数可以快速管理】
- *      3.观察者接口【①定义响应被观察者通知的响应】
- *      4.观察者实现【初始化+实现具体的响应被观察者通知的响应】
+ *      3.观察者接口【①定义响应(处理被观察者通知的响应)】
+ *      4.观察者实现【初始化+实现具体的响应(来自被观察者通知的响应)】
  */
 public class ObserverPattern {
     public static void main(String[] args) {
@@ -74,7 +76,7 @@ class Angelababy implements IPrettyGirl {
  * 抽象观察者
  */
 interface IObserver {
-    public void UpdateMsg(String msg);
+    void UpdateMsg(String msg);
 }
 
 
