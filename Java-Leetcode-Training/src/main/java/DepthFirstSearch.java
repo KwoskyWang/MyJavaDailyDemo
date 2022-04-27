@@ -37,7 +37,7 @@ public class DepthFirstSearch {
         recursionDfs(treeNode.left);
         recursionDfs(treeNode.right);
     }
-    // 非递归写法
+    // 非递归写法：通过控制压栈顺序来控制遍历顺序
     public static void recursionUnDfs(Node root){
         if (root == null) {
             return;
