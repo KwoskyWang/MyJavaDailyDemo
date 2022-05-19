@@ -4,6 +4,8 @@
 // 例子：前序遍历、中序遍历、后序遍历 都属于深度遍历 dfs
 // 场景：拓扑排序、寻路(走迷宫)、搜索引擎、爬虫
 
+// 写法解释: 从根节点开始,入栈,然后通过while来控制代码节奏(非空时弹出栈顶元素,判断并入栈其右/左节点,然后继续弹出栈顶...)即可实现深度遍历Jproject
+
 import java.util.Stack;
 
 public class DepthFirstSearch {
