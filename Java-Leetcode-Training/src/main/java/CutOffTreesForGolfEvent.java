@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * 题目: https://leetcode.cn/problems/cut-off-trees-for-golf-event/
+ *
+ * 说明: mxn矩阵中,0代表不能通行,其他数字代表着存在不同高度的树,现在从左上角开始砍树,砍树的顺序需要是由树高从小到大,计算砍完树需要的步数,如果不能砍完,返回-1;
+ */
+
 public class CutOffTreesForGolfEvent {
     int m, n;
     int[][] f;
